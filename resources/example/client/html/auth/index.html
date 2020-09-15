@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet/less" type="text/css" href="style.less"/>
+</head>
+<body>
+<div id='app'>
+  <div class="auth">
+    <!--            <img alt="" class="wave" src="../../assets/auth/wave.png">-->
+    <div class="container">
+      <!--                <div class="img">-->
+      <!--                    <img alt="" src="../../assets/auth/undraw_electric_car_b7hl.svg">-->
+      <!--                </div>-->
+      <div class="login-content">
+        <div class="login__wrapper">
+          <!--                        <img alt="" src="../../assets/auth/avatar.svg">-->
+          <h2 class="title">Welcome</h2>
+          <transition name="fade">
+            <!--                            v-show="getRoute"-->
+            <div class="input-div one">
+              <div class="i">
+                <i class="fas fa-user"></i>
+              </div>
+              <div class="div">
+                <h5>User</h5>
+                <input class="input" type="text" v-model="user.userName">
+              </div>
+            </div>
+          </transition>
+          <div class="input-div one">
+            <div class="i">
+              <i class="fas fa-envelope"></i>
+            </div>
+            <div class="div">
+              <h5>Email</h5>
+              <input class="input" type="text" v-model="user.email">
+            </div>
+          </div>
+          <div class="input-div pass">
+            <div class="i">
+              <i class="fas fa-lock"></i>
+            </div>
+            <div class="div">
+              <h5>Password</h5>
+              <input class="input" type="password" v-model="user.password">
+            </div>
+          </div>
+          <!--                        <div class="form_extend">-->
+          <!--                            <a href="/sign_up" v-if="!getRoute">Sign Up</a>-->
+          <!--                            <a href="/login" v-if="getRoute">Login</a>-->
+          <!--                            <a href="/">Forgot Password?</a>-->
+          <!--                        </div>-->
+                                  <input @click="login" class="btn" type="submit"  value="Login">
+                                  <input @click="signUp" class="btn" type="submit"  value="Sign Up">
+          <!--          <component v-bind:is="component" class="test"></component>-->
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<script src="../vue.min.js"></script>
+<script src="../less.min.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
