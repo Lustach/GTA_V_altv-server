@@ -1,7 +1,9 @@
+// todo зашифровать пароль, давать ответы на неправильность и валидность полей(при запросах с бэка тоже) и при регистрации
 import * as alt from 'alt'
 import chat from 'chat'
 import mongoose from 'mongoose'
 import User from './models/User.js'
+// import bcrypt from 'bcrypt'
 // let user = new User({
 // })
 // const mongoose = require('mongoose')
@@ -14,23 +16,6 @@ const InitiateMongoServer = async () => {
 		})
 		console.log("Connected to DB !!")
 		console.log(User(), typeof User)
-		const user = new User({ username: 'Silence', password: '123', email: 'lusta.vlad2001@gmail.com' })
-		if (!User.find( user['username'] )) {
-			user.save(function (err, silence) {
-				if (err) return console.error(err)
-				silence.save()
-			})
-		}
-		let data = []
-		await User.find(function (err, kittens) {
-			if (err) return console.error(err)
-			console.log(kittens, 'KITTENS')
-			data.push(kittens)
-		})
-		console.log(data, 'push')
-		console.log(user)
-		let result = await User.find({ username: 'Silence' })
-		console.log(result, 'result')
 	} catch (e) {
 		console.log(e, 'ERROR')
 		throw e
@@ -47,13 +32,43 @@ const spawnPos = {
 }
 alt.on('playerConnect', (player) => {
 	// X:-2639.872 Y:1866.812 Z:160.135
-	player.model = 'mp_m_freemode_01'
-	player.spawn(spawnPos.x, spawnPos.y, spawnPos.z, 5000)
 	alt.emitClient(player, 'webview:Load')
 })
 chat.registerCmd('hello', (player, arg) => {
 	alt.emitClient(player, 'hello:World')
 })
+alt.onClient('client:login',async (player,data)=>{
+	if (await isUserFind(data)>0) {
+		player.model = 'mp_m_freemode_01'
+		player.spawn(spawnPos.x, spawnPos.y, spawnPos.z, 5000)
+		alt.setTimeout(()=>{
+			alt.emitClient(player,'webview:Hide')
+			alt.log('Вошёл')
+		},2000)
+	}
+	else{
+		alt.log('Такого юзера нет, сначала зарегайся')
+	}
+})
+alt.onClient('client:signUp',async (player,data)=>{
+		let user = new User(data)
+		user.save(function (err, entity) {
+			if (err) return console.error(err)
+			entity.save()
+		})
+		player.model = 'mp_m_freemode_01'
+		player.spawn(spawnPos.x, spawnPos.y, spawnPos.z, 5000)
+		alt.setTimeout(()=>{
+			alt.emitClient(player,'webview:Hide')
+			alt.log('Зарегистрировался')
+		},2000)
+})
 // chat.registerCmd('loadpage',(player)=>{
 //     alt.emitClient(player,'webview:Load')
 // })
+
+//возвращает ноль если пользователь найден
+async function isUserFind(data){
+	console.log(data,await User.find( data ))
+	return (await User.find( data )).length
+}

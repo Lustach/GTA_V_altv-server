@@ -1,13 +1,46 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="3099d5fc-1aa3-4038-91b5-f654bdc2b809" name="Default Changelist" comment="" />
+    <list default="true" id="3099d5fc-1aa3-4038-91b5-f654bdc2b809" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/resources/example/server/utils.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/altv-server (1).iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/altv-server (1).iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/example/client/client.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/resources/example/client/client.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/example/client/html/auth/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/example/client/html/auth/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/example/client/html/auth/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/resources/example/client/html/auth/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/example/server/models/User.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/example/server/models/User.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/example/server/server.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/resources/example/server/server.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server.log" beforeDir="false" afterPath="$PROJECT_DIR$/server.log" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="1hXOeXXC4LWTBrkQTwGxzRBeCXf" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -36,12 +69,24 @@
       <option name="presentableId" value="Default" />
       <updated>1600154065285</updated>
       <workItem from="1600154066329" duration="933000" />
-      <workItem from="1600155033984" duration="13960000" />
+      <workItem from="1600155033984" duration="14169000" />
+      <workItem from="1600191651254" duration="8375000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="WindowStateProjectService">
     <state x="707" y="315" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1600164736103">
@@ -52,9 +97,17 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="627" y="308" key="EditFileWatcherDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1600180103841" />
-    <state x="668" y="257" width="583" height="526" key="find.popup" timestamp="1600184832035">
+    <state x="798" y="404" key="Github.ShareDialog" timestamp="1600191306474">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="668" y="257" width="583" height="526" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1600184832035" />
+    <state x="798" y="404" key="Github.ShareDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1600191306474" />
+    <state x="775" y="135" key="Github.UntrackedFilesDialog" timestamp="1600191400211">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="775" y="135" key="Github.UntrackedFilesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1600191400211" />
+    <state x="1162" y="274" width="583" height="526" key="find.popup" timestamp="1600199933380">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="1162" y="274" width="583" height="526" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1600199933380" />
   </component>
 </project>

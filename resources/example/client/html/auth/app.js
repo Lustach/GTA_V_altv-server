@@ -1,5 +1,10 @@
 Vue.config.devtools = true
 Vue.prototype.window = window
+// может ещё где пригодится
+const vars = {
+	login: 'webview:login',
+	signUp: 'webview:signUp',
+}
 const app = new Vue({
 	el: '#app',
 	mounted() {
@@ -12,6 +17,7 @@ const app = new Vue({
 	},
 	data() {
 		return {
+			isLogin: true,//регистрация или вход
 			user: {
 				email: '',
 				password: '',
@@ -28,14 +34,15 @@ const app = new Vue({
 	},
 	methods: {
 		login() {
-			if(this.isAlt){
-				alt.emit('display:Name',()=>{
-					alt.log('display:NAME')
-				})
-			}
+			if (this.isAlt)
+				if (this.isLogin) {
+					alt.emit(vars.login, { email: this.user.email, password: this.user.password })
+				} else {
+					alt.emit(vars.signUp, this.user)
+				}
 		},
-		signUp(){
-			console.log('signUp')
+		isLoginRevert() {
+			this.isLogin = !this.isLogin
 		},
 		setInputStyle() {
 			const inputs = document.querySelectorAll('.input')

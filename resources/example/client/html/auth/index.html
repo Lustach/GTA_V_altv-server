@@ -19,7 +19,7 @@
           <h2 class="title">Welcome</h2>
           <transition name="fade">
             <!--                            v-show="getRoute"-->
-            <div class="input-div one">
+            <div class="input-div one" v-show="!isLogin">
               <div class="i">
                 <i class="fas fa-user"></i>
               </div>
@@ -47,13 +47,13 @@
               <input class="input" type="password" v-model="user.password">
             </div>
           </div>
-          <!--                        <div class="form_extend">-->
-          <!--                            <a href="/sign_up" v-if="!getRoute">Sign Up</a>-->
-          <!--                            <a href="/login" v-if="getRoute">Login</a>-->
-          <!--                            <a href="/">Forgot Password?</a>-->
-          <!--                        </div>-->
-                                  <input @click="login" class="btn" type="submit"  value="Login">
-                                  <input @click="signUp" class="btn" type="submit"  value="Sign Up">
+          <div class="form_extend">
+            <a  v-if="isLogin" @click="isLoginRevert">Sign Up</a>
+            <a  v-if="!isLogin" @click="isLoginRevert">Login</a>
+            <a >Forgot Password?</a>
+          </div>
+                                  <input @click="login" class="btn" type="submit" v-show="isLogin"  value="Login">
+                                  <input @click="login" class="btn" type="submit" v-show="!isLogin" value="Sign Up">
           <!--          <component v-bind:is="component" class="test"></component>-->
         </div>
       </div>
@@ -63,5 +63,6 @@
 <script src="../vue.min.js"></script>
 <script src="../less.min.js"></script>
 <script src="app.js"></script>
+<script src="https://kit.fontawesome.com/a81368914c.js"></script>
 </body>
 </html>

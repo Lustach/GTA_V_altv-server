@@ -1,5 +1,15 @@
-[18:54:42] alt:V Server, build #1286, branch release
-[18:54:42] Starting alt:V Server on 0.0.0.0:7788
-[18:54:42] Loading resource example
-[18:54:42] Loading resource chat
-[18:54:42] Loaded resource chat
+[23:01:23] alt:V Server, build #1286, branch release
+[23:01:23] Starting alt:V Server on 0.0.0.0:7788
+[23:01:23] Loading resource example
+[23:01:23] Loading resource chat
+[23:01:23] Loaded resource chat
+[23:01:24] Loaded resource example
+[23:01:24] Starting HTTP server on 0.0.0.0:7788
+[23:01:24] Console thread started (ThreadId: 16228)
+[23:01:24] Main thread started (ThreadId: 4092)
+[23:01:24] Colshape thread started (ThreadId: 4256)
+[23:01:24] EntityStreamer thread started (ThreadId: 3452)
+[23:01:24] Network thread started (ThreadId: 14972)
+[23:01:24] Server started
+[23:01:51][Warning] Event handler at example:file:///C:/Users/lusta/Desktop/ALT/altv-server/resources/example/server/server.mjs:53 was too long 7ms
+[23:01:53] Зарегистрировался
