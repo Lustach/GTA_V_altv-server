@@ -1,15 +1,21 @@
-[23:01:23] alt:V Server, build #1286, branch release
-[23:01:23] Starting alt:V Server on 0.0.0.0:7788
-[23:01:23] Loading resource example
-[23:01:23] Loading resource chat
-[23:01:23] Loaded resource chat
-[23:01:24] Loaded resource example
-[23:01:24] Starting HTTP server on 0.0.0.0:7788
-[23:01:24] Console thread started (ThreadId: 16228)
-[23:01:24] Main thread started (ThreadId: 4092)
-[23:01:24] Colshape thread started (ThreadId: 4256)
-[23:01:24] EntityStreamer thread started (ThreadId: 3452)
-[23:01:24] Network thread started (ThreadId: 14972)
-[23:01:24] Server started
-[23:01:51][Warning] Event handler at example:file:///C:/Users/lusta/Desktop/ALT/altv-server/resources/example/server/server.mjs:53 was too long 7ms
-[23:01:53] Зарегистрировался
+[21:25:49] alt:V Server, build #1286, branch release
+[21:25:49] Starting alt:V Server on 0.0.0.0:7788
+[21:25:49] Loading resource example
+[21:25:49] Loading resource chat
+[21:25:49] Loaded resource chat
+[21:25:49] Loaded resource example
+[21:25:49] Starting HTTP server on 0.0.0.0:7788
+[21:25:49] Console thread started (ThreadId: 3528)
+[21:25:49] Main thread started (ThreadId: 9452)
+[21:25:49] Colshape thread started (ThreadId: 18408)
+[21:25:49] EntityStreamer thread started (ThreadId: 10228)
+[21:25:49] Network thread started (ThreadId: 4280)
+[21:25:49] Server started
+[21:25:56][Warning] resourceManager.Update() took: 130 ms
+[21:26:57] Stopping resource example
+[21:26:57] Stopped resource example
+[21:26:57] Loading resource example
+[21:26:58][Error] Failed to register command /hello, already registered
+[21:26:58] Loaded resource example
+[21:27:03][Warning] resourceManager.Update() took: 121 ms
+[21:27:05] Вошёл

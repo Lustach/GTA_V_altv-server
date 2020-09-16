@@ -3,7 +3,8 @@ import * as alt from 'alt'
 import chat from 'chat'
 import mongoose from 'mongoose'
 import User from './models/User.js'
-// import bcrypt from 'bcrypt'
+import bcrypt from 'bcryptjs'
+
 // let user = new User({
 // })
 // const mongoose = require('mongoose')
@@ -38,7 +39,12 @@ chat.registerCmd('hello', (player, arg) => {
 	alt.emitClient(player, 'hello:World')
 })
 alt.onClient('client:login',async (player,data)=>{
-	if (await isUserFind(data)>0) {
+	// alt.log(await getUser(data),'user')
+	// await getUserByEmail(data.email)
+	const result = await getUserByEmail(data.email)
+	// alt.log(bcrypt.compareSync(data.password, result[0].password),'compare')
+	// alt.log(bcrypt.hashSync(password,data.password),'NUI')
+	if (bcrypt.compareSync(data.password, result[0].password)) {
 		player.model = 'mp_m_freemode_01'
 		player.spawn(spawnPos.x, spawnPos.y, spawnPos.z, 5000)
 		alt.setTimeout(()=>{
@@ -52,8 +58,10 @@ alt.onClient('client:login',async (player,data)=>{
 })
 alt.onClient('client:signUp',async (player,data)=>{
 		let user = new User(data)
-		user.save(function (err, entity) {
+		await user.save(function (err, entity) {
 			if (err) return console.error(err)
+			alt.log(entity,'entity')
+			entity.password= bcrypt.hashSync(entity.password,10)
 			entity.save()
 		})
 		player.model = 'mp_m_freemode_01'
@@ -69,6 +77,10 @@ alt.onClient('client:signUp',async (player,data)=>{
 
 //возвращает ноль если пользователь найден
 async function isUserFind(data){
-	console.log(data,await User.find( data ))
+	console.log(data,await User.find( data ),'DATA')
 	return (await User.find( data )).length
+}
+async function getUserByEmail(email){
+	console.log(await User.find({ email }))
+	return await User.find({ email } )
 }
