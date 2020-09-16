@@ -1,4 +1,4 @@
-// todo зашифровать пароль, давать ответы на неправильность и валидность полей(при запросах с бэка тоже) и при регистрации
+// todo давать ответы на неправильность и валидность полей(при запросах с бэка тоже) и при регистрации
 import * as alt from 'alt'
 import chat from 'chat'
 import mongoose from 'mongoose'
@@ -41,6 +41,7 @@ chat.registerCmd('hello', (player, arg) => {
 alt.onClient('client:login',async (player,data)=>{
 	// alt.log(await getUser(data),'user')
 	// await getUserByEmail(data.email)
+	// todo доделать ответ на неправильные данные
 	const result = await getUserByEmail(data.email)
 	// alt.log(bcrypt.compareSync(data.password, result[0].password),'compare')
 	// alt.log(bcrypt.hashSync(password,data.password),'NUI')

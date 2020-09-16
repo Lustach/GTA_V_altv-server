@@ -1,5 +1,8 @@
+// todo vuelidate так же пошёл гулять как и всё остаальное
 Vue.config.devtools = true
 Vue.prototype.window = window
+
+// import {minLength, required,email} from 'vuelidate/lib/validators'
 // может ещё где пригодится
 const vars = {
 	login: 'webview:login',
@@ -23,13 +26,52 @@ const app = new Vue({
 				password: '',
 				userName: '',
 			},
-			test: 'JOPA',
+			validations: {
+				user: {
+					email: {
+						required: true,
+						email: true
+					},
+					password: {
+						required: true,
+						minLength: 5,
+					},
+					userName: {
+						required: true
+					},
+				}
+			}
 		}
 	},
 	// component = 'Login'
 	computed: {
 		isAlt() {
 			return 'alt' in window
+		},
+		isUserNameValid() {
+			console.log(Boolean(this.user.userName), 'validUserName')
+			return this.user.userName
+		},
+		isUserEmailValid() {
+			console.log(Boolean(this.user.email.includes('@')), 'validUserEmail')
+			return this.isEmailLengthValid && this.isEmailValid
+		},
+		isEmailLengthValid() {
+			return this.user.email.length < 3
+		},
+		isEmailValid() {
+			return this.user.email.indexOf('@') !== -1
+		},
+		isUserPassValid() {
+			console.log(Boolean(this.user.password.length > 4), 'validUserPass')
+			return this.user.password.length > 4
+		},
+		validForm() {
+			if (this.isLogin) {
+				return this.isUserEmailValid && this.isUserPassValid
+			} else {
+				return this.isUserEmailValid && this.isUserNameValid && this.isUserPassValid
+			}
 		}
 	},
 	methods: {

@@ -19,10 +19,13 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3099d5fc-1aa3-4038-91b5-f654bdc2b809" name="Default Changelist" comment="UPDATE">
+    <list default="true" id="3099d5fc-1aa3-4038-91b5-f654bdc2b809" name="Default Changelist" comment="ADD: bcrypt-js&#10;Del: bcrypt">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/example/client/html/auth/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/example/client/html/auth/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/example/client/html/auth/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/resources/example/client/html/auth/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/example/client/html/auth/style.less" beforeDir="false" afterPath="$PROJECT_DIR$/resources/example/client/html/auth/style.less" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/example/server/server.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/resources/example/server/server.mjs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server.log" beforeDir="false" afterPath="$PROJECT_DIR$/server.log" afterDir="false" />
     </list>
@@ -66,7 +69,7 @@
       <workItem from="1600154066329" duration="933000" />
       <workItem from="1600155033984" duration="14169000" />
       <workItem from="1600191651254" duration="8709000" />
-      <workItem from="1600278305123" duration="2511000" />
+      <workItem from="1600278305123" duration="8615000" />
     </task>
     <task id="LOCAL-00001" summary="ADD: login signUp&#10;todo зашифровать пароль, давать ответы на неправильность и валидность полей(при запросах с бэка тоже) и при регистрации">
       <created>1600200230924</created>
@@ -82,7 +85,14 @@
       <option name="project" value="LOCAL" />
       <updated>1600200278703</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="ADD: bcrypt-js&#10;Del: bcrypt">
+      <created>1600280894071</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1600280894071</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -103,7 +113,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="ADD: login signUp&#10;todo зашифровать пароль, давать ответы на неправильность и валидность полей(при запросах с бэка тоже) и при регистрации" />
     <MESSAGE value="UPDATE" />
-    <option name="LAST_COMMIT_MESSAGE" value="UPDATE" />
+    <MESSAGE value="ADD: bcrypt-js&#10;Del: bcrypt" />
+    <option name="LAST_COMMIT_MESSAGE" value="ADD: bcrypt-js&#10;Del: bcrypt" />
   </component>
   <component name="WindowStateProjectService">
     <state x="707" y="315" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1600164736103">
@@ -122,13 +133,17 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="775" y="135" key="Github.UntrackedFilesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1600191400211" />
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1600200280163">
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1600280896010">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1600200280163" />
-    <state x="1162" y="274" width="583" height="526" key="find.popup" timestamp="1600199933380">
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1600280896010" />
+    <state x="1162" y="274" width="583" height="526" key="find.popup" timestamp="1600286367998">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="1162" y="274" width="583" height="526" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1600199933380" />
+    <state x="1162" y="274" width="583" height="526" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1600286367998" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1600283144487">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1600283144487" />
   </component>
 </project>

@@ -1,21 +1,45 @@
-[21:25:49] alt:V Server, build #1286, branch release
-[21:25:49] Starting alt:V Server on 0.0.0.0:7788
-[21:25:49] Loading resource example
-[21:25:49] Loading resource chat
-[21:25:49] Loaded resource chat
-[21:25:49] Loaded resource example
-[21:25:49] Starting HTTP server on 0.0.0.0:7788
-[21:25:49] Console thread started (ThreadId: 3528)
-[21:25:49] Main thread started (ThreadId: 9452)
-[21:25:49] Colshape thread started (ThreadId: 18408)
-[21:25:49] EntityStreamer thread started (ThreadId: 10228)
-[21:25:49] Network thread started (ThreadId: 4280)
-[21:25:49] Server started
-[21:25:56][Warning] resourceManager.Update() took: 130 ms
-[21:26:57] Stopping resource example
-[21:26:57] Stopped resource example
-[21:26:57] Loading resource example
-[21:26:58][Error] Failed to register command /hello, already registered
-[21:26:58] Loaded resource example
-[21:27:03][Warning] resourceManager.Update() took: 121 ms
-[21:27:05] Вошёл
+[22:55:42] alt:V Server, build #1286, branch release
+[22:55:42] Starting alt:V Server on 0.0.0.0:7788
+[22:55:42] Loading resource example
+[22:55:42] Loading resource chat
+[22:55:42] Loaded resource chat
+[22:55:43] Loaded resource example
+[22:55:43] Starting HTTP server on 0.0.0.0:7788
+[22:55:43] Console thread started (ThreadId: 15892)
+[22:55:43] Main thread started (ThreadId: 2424)
+[22:55:43] Colshape thread started (ThreadId: 14136)
+[22:55:43] EntityStreamer thread started (ThreadId: 12732)
+[22:55:43] Network thread started (ThreadId: 19404)
+[22:55:43] Server started
+[22:56:43] Stopping resource example
+[22:56:43] Stopped resource example
+[22:56:43] Loading resource example
+[22:56:43][Error] Failed to register command /hello, already registered
+[22:56:44] Loaded resource example
+[22:57:06] Stopping resource example
+[22:57:06] Stopped resource example
+[22:57:06] Loading resource example
+[22:57:06][Error] Failed to register command /hello, already registered
+[22:57:06] Loaded resource example
+[22:57:26] Stopping resource example
+[22:57:26] Stopped resource example
+[22:57:26] Loading resource example
+[22:57:27][Error] Failed to register command /hello, already registered
+[22:57:27] Loaded resource example
+[22:58:33] Stopping resource example
+[22:58:33] Stopped resource example
+[22:58:33] Loading resource example
+[22:58:34][Error] Failed to register command /hello, already registered
+[22:58:34] Loaded resource example
+[23:00:48][Warning] resourceManager.Update() took: 133 ms
+[23:00:50] Вошёл
+[23:02:26] Stopping resource example
+[23:02:26] Stopped resource example
+[23:02:26] Loading resource example
+[23:02:27][Error] Failed to register command /hello, already registered
+[23:02:27] Loaded resource example
+[23:03:26] Stopping resource example
+[23:03:26] Stopped resource example
+[23:03:26] Loading resource example
+[23:03:27][Error] Failed to register command /hello, already registered
+[23:03:27] Loaded resource example

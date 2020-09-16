@@ -17,43 +17,52 @@
         <div class="login__wrapper">
           <!--                        <img alt="" src="../../assets/auth/avatar.svg">-->
           <h2 class="title">Welcome</h2>
-          <transition name="fade">
-            <!--                            v-show="getRoute"-->
-            <div class="input-div one" v-show="!isLogin">
-              <div class="i">
-                <i class="fas fa-user"></i>
-              </div>
-              <div class="div">
-                <h5>User</h5>
-                <input class="input" type="text" v-model="user.userName">
-              </div>
+          <!--                            v-show="getRoute"-->
+          <div class="input-div one" v-show="!isLogin">
+            <div class="i">
+              <i class="fas fa-user"></i>
             </div>
-          </transition>
+            <div class="div">
+              <h5>User</h5>
+              <input class="input" type="text" v-model.lazy="user.userName">
+            </div>
+          </div>
+          <p v-show="!isUserNameValid && !isLogin">
+            Обязательное поле
+          </p>
           <div class="input-div one">
             <div class="i">
               <i class="fas fa-envelope"></i>
             </div>
             <div class="div">
               <h5>Email</h5>
-              <input class="input" type="text" v-model="user.email">
+              <input class="input" type="text" v-model.lazy="user.email">
             </div>
           </div>
+          <p v-show="!isUserEmailValid">
+            <span v-show="isEmailLengthValid">Обязательное поле</span>
+            <span v-show="!isEmailValid && !isEmailLengthValid">Введите валидный email</span>
+          </p>
           <div class="input-div pass">
             <div class="i">
               <i class="fas fa-lock"></i>
             </div>
             <div class="div">
               <h5>Password</h5>
-              <input class="input" type="password" v-model="user.password">
+              <input class="input" type="password" v-model.lazy="user.password">
             </div>
           </div>
-          <div class="form_extend">
-            <a  v-if="isLogin" @click="isLoginRevert">Sign Up</a>
-            <a  v-if="!isLogin" @click="isLoginRevert">Login</a>
-            <a >Forgot Password?</a>
+          <p v-show="!isUserPassValid">
+            <span v-show="!isUserPassValid">Пароль должен содержать минимум 5 символов</span>
+          </p>
+          <div class="form_extend" style="display: flex; justify-content: center;">
+            <a v-if="isLogin" @click="isLoginRevert">Sign Up</a>
+            <a v-if="!isLogin" @click="isLoginRevert">Login</a>
+            <!--            <a>Forgot Password?</a>-->
           </div>
-                                  <input @click="login" class="btn" type="submit" v-show="isLogin"  value="Login">
-                                  <input @click="login" class="btn" type="submit" v-show="!isLogin" value="Sign Up">
+          <!--          :disabled="validForm? '' : 'disabled'"-->
+          <input @click="login" class="btn" type="submit" v-show="isLogin" value="Login">
+          <input @click="login" class="btn" type="submit" v-show="!isLogin" value="Sign Up">
           <!--          <component v-bind:is="component" class="test"></component>-->
         </div>
       </div>
