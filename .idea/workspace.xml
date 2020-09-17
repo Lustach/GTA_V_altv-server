@@ -19,8 +19,26 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3099d5fc-1aa3-4038-91b5-f654bdc2b809" name="Default Changelist" comment="ADD: bcrypt-js&#10;Del: bcrypt">
+    <list default="true" id="3099d5fc-1aa3-4038-91b5-f654bdc2b809" name="Default Changelist" comment="ADD: доделал ответ на неправильные данные">
+      <change afterPath="$PROJECT_DIR$/resources/car/client/html/app.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/car/client/html/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/car/client/html/less.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/car/client/html/style.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/car/client/html/vue.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/car/resource.cfg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/car/server/server.mjs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/example/client/html/car/app.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/example/client/html/car/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/example/client/html/car/style.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/example/client/html/car/vue.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/example/client/client.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/resources/example/client/client.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/example/client/html/api.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/car/client/client.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/example/client/html/auth/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/example/client/html/auth/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/example/client/html/auth/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/resources/example/client/html/auth/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/example/resource.cfg" beforeDir="false" afterPath="$PROJECT_DIR$/resources/example/resource.cfg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/example/server/server.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/resources/example/server/server.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server.cfg" beforeDir="false" afterPath="$PROJECT_DIR$/server.cfg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server.log" beforeDir="false" afterPath="$PROJECT_DIR$/server.log" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -43,6 +61,7 @@
     <property name="dart.analysis.tool.window.visible" value="false" />
     <property name="javascript.nodejs.core.library.configured.version" value="12.18.3" />
     <property name="javascript.nodejs.core.library.typings.version" value="12.12.58" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/car/client/html" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -51,6 +70,17 @@
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\lusta\Desktop\ALT\altv-server\resources\car\client\html" />
+      <recent name="C:\Users\lusta\Desktop\ALT\altv-server\resources\car\client" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\lusta\Desktop\ALT\altv-server\resources\car\client\html" />
+      <recent name="C:\Users\lusta\Desktop\ALT\altv-server\resources" />
+      <recent name="C:\Users\lusta\Desktop\ALT\altv-server\resources\example\client\html\car" />
+    </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -64,7 +94,7 @@
       <workItem from="1600155033984" duration="14169000" />
       <workItem from="1600191651254" duration="8709000" />
       <workItem from="1600278305123" duration="8615000" />
-      <workItem from="1600364025869" duration="305000" />
+      <workItem from="1600364025869" duration="11854000" />
     </task>
     <task id="LOCAL-00001" summary="ADD: login signUp&#10;todo зашифровать пароль, давать ответы на неправильность и валидность полей(при запросах с бэка тоже) и при регистрации">
       <created>1600200230924</created>
@@ -87,7 +117,14 @@
       <option name="project" value="LOCAL" />
       <updated>1600280894071</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="ADD: доделал ответ на неправильные данные">
+      <created>1600364409554</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1600364409554</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -109,7 +146,8 @@
     <MESSAGE value="ADD: login signUp&#10;todo зашифровать пароль, давать ответы на неправильность и валидность полей(при запросах с бэка тоже) и при регистрации" />
     <MESSAGE value="UPDATE" />
     <MESSAGE value="ADD: bcrypt-js&#10;Del: bcrypt" />
-    <option name="LAST_COMMIT_MESSAGE" value="ADD: bcrypt-js&#10;Del: bcrypt" />
+    <MESSAGE value="ADD: доделал ответ на неправильные данные" />
+    <option name="LAST_COMMIT_MESSAGE" value="ADD: доделал ответ на неправильные данные" />
   </component>
   <component name="WindowStateProjectService">
     <state x="707" y="315" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1600164736103">
@@ -128,14 +166,14 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="775" y="135" key="Github.UntrackedFilesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1600191400211" />
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1600280896010">
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1600364410989">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1600280896010" />
-    <state x="1162" y="274" width="583" height="526" key="find.popup" timestamp="1600286367998">
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1600364410989" />
+    <state x="1162" y="274" width="583" height="526" key="find.popup" timestamp="1600375804358">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="1162" y="274" width="583" height="526" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1600286367998" />
+    <state x="1162" y="274" width="583" height="526" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1600375804358" />
     <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1600283144487">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

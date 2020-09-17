@@ -4,7 +4,7 @@ Vue.prototype.window = window
 
 // import {minLength, required,email} from 'vuelidate/lib/validators'
 // может ещё где пригодится
-const vars = {
+const events = {
 	login: 'webview:login',
 	signUp: 'webview:signUp',
 }
@@ -12,11 +12,6 @@ const app = new Vue({
 	el: '#app',
 	mounted() {
 		this.setInputStyle()
-		// if (this.$route.fullPath == '/sign_up') {
-		//   this.component = 'SignUp'
-		// } else {
-		//   this.component = 'Login'
-		// }
 	},
 	data() {
 		return {
@@ -43,7 +38,6 @@ const app = new Vue({
 			}
 		}
 	},
-	// component = 'Login'
 	computed: {
 		isAlt() {
 			return 'alt' in window
@@ -75,12 +69,15 @@ const app = new Vue({
 		}
 	},
 	methods: {
+		keyAlt(){
+			console.log('keyup')
+		},
 		login() {
 			if (this.isAlt)
 				if (this.isLogin) {
-					alt.emit(vars.login, { email: this.user.email, password: this.user.password })
+					alt.emit(events.login, { email: this.user.email, password: this.user.password })
 				} else {
-					alt.emit(vars.signUp, this.user)
+					alt.emit(events.signUp, this.user)
 				}
 		},
 		isLoginRevert() {

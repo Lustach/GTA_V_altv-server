@@ -50,7 +50,10 @@ alt.onClient('client:login',async (player,data)=>{
 		alt.setTimeout(()=>{
 			alt.emitClient(player,'webview:Hide')
 			alt.log('Вошёл')
+			// alt.toggleGameControls(true)
 		},2000)
+		alt.emit('player:Spawn',player);
+
 	}
 	else{
 		alt.log('Такого юзера нет, проверь данные или зарегистрируйся')
@@ -66,6 +69,7 @@ alt.onClient('client:signUp',async (player,data)=>{
 		})
 		player.model = 'mp_m_freemode_01'
 		player.spawn(spawnPos.x, spawnPos.y, spawnPos.z, 5000)
+		alt.emit('player:Spawn',player);
 		alt.setTimeout(()=>{
 			alt.emitClient(player,'webview:Hide')
 			alt.log('Зарегистрировался')
@@ -84,3 +88,4 @@ async function getUserByEmail(email){
 	console.log(await User.find({ email }))
 	return await User.find({ email } )
 }
+

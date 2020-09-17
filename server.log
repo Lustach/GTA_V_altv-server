@@ -1,26 +1,19 @@
-[20:35:06] alt:V Server, build #1286, branch release
-[20:35:06] Starting alt:V Server on 0.0.0.0:7788
-[20:35:08] Loading resource example
-[20:35:08] Loading resource chat
-[20:35:09] Loaded resource chat
-[20:35:14] Loaded resource example
-[20:35:14] Starting HTTP server on 0.0.0.0:7788
-[20:35:14] Console thread started (ThreadId: 21500)
-[20:35:14] Main thread started (ThreadId: 11408)
-[20:35:14] Colshape thread started (ThreadId: 7452)
-[20:35:14] EntityStreamer thread started (ThreadId: 10200)
-[20:35:14] Network thread started (ThreadId: 12524)
-[20:35:14] Server started
-[20:36:51][Warning] resourceManager.Update() took: 114 ms
-[20:36:53] Вошёл
-[20:37:11][Warning] resourceManager.Update() took: 107 ms
-[20:37:23][Warning] resourceManager.Update() took: 88 ms
-[20:37:25] Вошёл
-[20:38:36] Stopping resource example
-[20:38:36] Stopped resource example
-[20:38:36] Loading resource example
-[20:38:37][Error] Failed to register command /hello, already registered
-[20:38:37] Loaded resource example
-[20:38:51] Такого юзера нет, сначала зарегайся
-[20:39:21][Warning] resourceManager.Update() took: 114 ms
-[20:39:23] Вошёл
+[00:04:22] alt:V Server, build #1286, branch release
+[00:04:22] Starting alt:V Server on 0.0.0.0:7788
+[00:04:22] Loading resource example
+[00:04:22] Loading resource chat
+[00:04:22] Loaded resource chat
+[00:04:23] Loaded resource example
+[00:04:23] Loading resource car
+[00:04:23] Loaded resource car
+[00:04:23] Starting HTTP server on 0.0.0.0:7788
+[00:04:23] Console thread started (ThreadId: 6880)
+[00:04:23] Main thread started (ThreadId: 6140)
+[00:04:23] Colshape thread started (ThreadId: 6528)
+[00:04:23] EntityStreamer thread started (ThreadId: 5760)
+[00:04:23] Network thread started (ThreadId: 1808)
+[00:04:23] Server started
+[00:04:27] engine:loadServer
+[00:04:30][Warning] resourceManager.Update() took: 122 ms
+[00:04:30][Warning] Event handler at car:file:///C:/Users/lusta/Desktop/ALT/altv-server/resources/car/server/server.mjs:8 was too long 10ms
+[00:04:33] Вошёл

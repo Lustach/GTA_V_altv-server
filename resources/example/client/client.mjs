@@ -21,4 +21,5 @@ alt.onServer('webview:Load',()=>{
 
 alt.onServer('webview:Hide',()=>{
     webview.isVisible=false
+    alt.showCursor(false)
 })
