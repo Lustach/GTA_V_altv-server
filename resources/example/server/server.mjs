@@ -41,11 +41,10 @@ chat.registerCmd('hello', (player, arg) => {
 alt.onClient('client:login',async (player,data)=>{
 	// alt.log(await getUser(data),'user')
 	// await getUserByEmail(data.email)
-	// todo доделать ответ на неправильные данные
 	const result = await getUserByEmail(data.email)
 	// alt.log(bcrypt.compareSync(data.password, result[0].password),'compare')
 	// alt.log(bcrypt.hashSync(password,data.password),'NUI')
-	if (bcrypt.compareSync(data.password, result[0].password)) {
+	if (result.length>0 && bcrypt.compareSync(data.password, result[0].password)) {
 		player.model = 'mp_m_freemode_01'
 		player.spawn(spawnPos.x, spawnPos.y, spawnPos.z, 5000)
 		alt.setTimeout(()=>{
@@ -54,7 +53,7 @@ alt.onClient('client:login',async (player,data)=>{
 		},2000)
 	}
 	else{
-		alt.log('Такого юзера нет, сначала зарегайся')
+		alt.log('Такого юзера нет, проверь данные или зарегистрируйся')
 	}
 })
 alt.onClient('client:signUp',async (player,data)=>{

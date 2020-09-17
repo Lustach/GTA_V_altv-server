@@ -20,12 +20,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3099d5fc-1aa3-4038-91b5-f654bdc2b809" name="Default Changelist" comment="ADD: bcrypt-js&#10;Del: bcrypt">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/example/client/html/auth/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/example/client/html/auth/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/example/client/html/auth/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/resources/example/client/html/auth/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/example/client/html/auth/style.less" beforeDir="false" afterPath="$PROJECT_DIR$/resources/example/client/html/auth/style.less" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/example/server/server.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/resources/example/server/server.mjs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server.log" beforeDir="false" afterPath="$PROJECT_DIR$/server.log" afterDir="false" />
     </list>
@@ -70,6 +64,7 @@
       <workItem from="1600155033984" duration="14169000" />
       <workItem from="1600191651254" duration="8709000" />
       <workItem from="1600278305123" duration="8615000" />
+      <workItem from="1600364025869" duration="305000" />
     </task>
     <task id="LOCAL-00001" summary="ADD: login signUp&#10;todo зашифровать пароль, давать ответы на неправильность и валидность полей(при запросах с бэка тоже) и при регистрации">
       <created>1600200230924</created>

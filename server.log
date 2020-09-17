@@ -1,45 +1,26 @@
-[22:55:42] alt:V Server, build #1286, branch release
-[22:55:42] Starting alt:V Server on 0.0.0.0:7788
-[22:55:42] Loading resource example
-[22:55:42] Loading resource chat
-[22:55:42] Loaded resource chat
-[22:55:43] Loaded resource example
-[22:55:43] Starting HTTP server on 0.0.0.0:7788
-[22:55:43] Console thread started (ThreadId: 15892)
-[22:55:43] Main thread started (ThreadId: 2424)
-[22:55:43] Colshape thread started (ThreadId: 14136)
-[22:55:43] EntityStreamer thread started (ThreadId: 12732)
-[22:55:43] Network thread started (ThreadId: 19404)
-[22:55:43] Server started
-[22:56:43] Stopping resource example
-[22:56:43] Stopped resource example
-[22:56:43] Loading resource example
-[22:56:43][Error] Failed to register command /hello, already registered
-[22:56:44] Loaded resource example
-[22:57:06] Stopping resource example
-[22:57:06] Stopped resource example
-[22:57:06] Loading resource example
-[22:57:06][Error] Failed to register command /hello, already registered
-[22:57:06] Loaded resource example
-[22:57:26] Stopping resource example
-[22:57:26] Stopped resource example
-[22:57:26] Loading resource example
-[22:57:27][Error] Failed to register command /hello, already registered
-[22:57:27] Loaded resource example
-[22:58:33] Stopping resource example
-[22:58:33] Stopped resource example
-[22:58:33] Loading resource example
-[22:58:34][Error] Failed to register command /hello, already registered
-[22:58:34] Loaded resource example
-[23:00:48][Warning] resourceManager.Update() took: 133 ms
-[23:00:50] Вошёл
-[23:02:26] Stopping resource example
-[23:02:26] Stopped resource example
-[23:02:26] Loading resource example
-[23:02:27][Error] Failed to register command /hello, already registered
-[23:02:27] Loaded resource example
-[23:03:26] Stopping resource example
-[23:03:26] Stopped resource example
-[23:03:26] Loading resource example
-[23:03:27][Error] Failed to register command /hello, already registered
-[23:03:27] Loaded resource example
+[20:35:06] alt:V Server, build #1286, branch release
+[20:35:06] Starting alt:V Server on 0.0.0.0:7788
+[20:35:08] Loading resource example
+[20:35:08] Loading resource chat
+[20:35:09] Loaded resource chat
+[20:35:14] Loaded resource example
+[20:35:14] Starting HTTP server on 0.0.0.0:7788
+[20:35:14] Console thread started (ThreadId: 21500)
+[20:35:14] Main thread started (ThreadId: 11408)
+[20:35:14] Colshape thread started (ThreadId: 7452)
+[20:35:14] EntityStreamer thread started (ThreadId: 10200)
+[20:35:14] Network thread started (ThreadId: 12524)
+[20:35:14] Server started
+[20:36:51][Warning] resourceManager.Update() took: 114 ms
+[20:36:53] Вошёл
+[20:37:11][Warning] resourceManager.Update() took: 107 ms
+[20:37:23][Warning] resourceManager.Update() took: 88 ms
+[20:37:25] Вошёл
+[20:38:36] Stopping resource example
+[20:38:36] Stopped resource example
+[20:38:36] Loading resource example
+[20:38:37][Error] Failed to register command /hello, already registered
+[20:38:37] Loaded resource example
+[20:38:51] Такого юзера нет, сначала зарегайся
+[20:39:21][Warning] resourceManager.Update() took: 114 ms
+[20:39:23] Вошёл
