@@ -1,19 +1,22 @@
-[00:04:22] alt:V Server, build #1286, branch release
-[00:04:22] Starting alt:V Server on 0.0.0.0:7788
-[00:04:22] Loading resource example
-[00:04:22] Loading resource chat
-[00:04:22] Loaded resource chat
-[00:04:23] Loaded resource example
-[00:04:23] Loading resource car
-[00:04:23] Loaded resource car
-[00:04:23] Starting HTTP server on 0.0.0.0:7788
-[00:04:23] Console thread started (ThreadId: 6880)
-[00:04:23] Main thread started (ThreadId: 6140)
-[00:04:23] Colshape thread started (ThreadId: 6528)
-[00:04:23] EntityStreamer thread started (ThreadId: 5760)
-[00:04:23] Network thread started (ThreadId: 1808)
-[00:04:23] Server started
-[00:04:27] engine:loadServer
-[00:04:30][Warning] resourceManager.Update() took: 122 ms
-[00:04:30][Warning] Event handler at car:file:///C:/Users/lusta/Desktop/ALT/altv-server/resources/car/server/server.mjs:8 was too long 10ms
-[00:04:33] Вошёл
+[17:24:51] alt:V Server, build #1286, branch release
+[17:24:51] Starting alt:V Server on 0.0.0.0:7788
+[17:24:51] Loading resource example
+[17:24:51] Loading resource chat
+[17:24:52] Loaded resource chat
+[17:24:52] Loaded resource example
+[17:24:52] Loading resource car
+[17:24:52] Loaded resource car
+[17:24:52] Starting HTTP server on 0.0.0.0:7788
+[17:24:52] Console thread started (ThreadId: 20160)
+[17:24:52] Main thread started (ThreadId: 19348)
+[17:24:52] Colshape thread started (ThreadId: 8560)
+[17:24:52] EntityStreamer thread started (ThreadId: 19296)
+[17:24:52] Network thread started (ThreadId: 18192)
+[17:24:52] Server started
+[17:25:06] engine:loadServer
+[17:25:15] Вошёл
+[17:25:15][Warning] resourceManager.Update() took: 117 ms
+[17:25:15][Warning] Event handler at car:file:///C:/Users/lusta/Desktop/ALT/altv-server/resources/car/server/server.mjs:8 was too long 11ms
+[17:25:40] ToggleEngineInserver
+[17:25:40] [object Vehicle] data.vehicle!
+[17:25:40] toggleEngine true 99.89208672286072

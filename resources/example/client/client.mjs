@@ -1,13 +1,8 @@
 // на клиенте clg не пашет
 import * as alt from 'alt'
 let webview
-alt.onServer('hello:World',()=>{
-    alt.log('WOrld')
-    // alt.emitCline(null,'world')
-})
 alt.onServer('webview:Load',()=>{
-    alt.log('YEa');
-    console.log('hop')
+    webview = undefined
     webview = new alt.WebView('http://resource/client/html/auth/index.html')
     webview.focus()
     alt.showCursor(true)
@@ -21,5 +16,5 @@ alt.onServer('webview:Load',()=>{
 
 alt.onServer('webview:Hide',()=>{
     webview.isVisible=false
-    alt.showCursor(false)
+    // alt.showCursor(false)
 })

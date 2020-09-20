@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>speedometer</title>
+  <link rel="stylesheet/less" type="text/css" href="./style.less" />
+</head>
+
+<body>
+<div id="app">
+  <div class="container" v-show="show">
+    <div class="fuel">
+      <div class="fuel-block">
+        <div ref="fuel" class="fuel-block__vline"></div>
+      </div>
+    </div>
+    <div class="panel">
+      <div ref="rpm" class="panel-rpm">
+        <div class="panel-speed">{{speed}}</div>
+        <div class="panel-gear">{{gear}}</div>
+      </div>
+    </div>
+  </div>
+</div>
+<script src="../vue.min.js"></script>
+<script src="../less.min.js"></script>
+<script src="./app.js" type="text/javascript"></script>
+</body>
+
+</html>

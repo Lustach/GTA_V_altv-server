@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto|Roboto+Condensed|Roboto+Mono|Staatliches&display=swap');
+@dark: rgba(50, 50, 50, 1);
+@darker: rgba(20, 20, 20, 1);
+@medium: rgba(100, 100, 100, 1);
+@light: rgba(215, 215, 215, 1);
+@contrast: rgb(68, 199, 118);
+@contrast2: rgb(162, 91, 190);
+@contrast2-light: rgb(195, 143, 216);
+@error: rgb(255, 233, 137);
+@Roboto: 'Roboto';
+@RobotoCondensed: 'Roboto Condensed';
+@RobotoMono: 'Roboto Mono';
+@Staatliches: 'Staatliches';
+
+*,
+*:focus {
+    outline: none;
+}
+
+body,
+html {
+    padding: 0;
+    margin: 0;
+    font-family: @Roboto;
+}
+
+.panel {
+    width: 200px;
+
+    &-gear {
+
+        font-size: 60px;
+        position: absolute;
+        bottom: 20px;
+        left: 0px;
+    }
+
+    &-rpm {
+        height: 0px;
+        background-color: #ff9800;
+
+    }
+
+    &-speed {
+      position: absolute;
+      font-size: 70px;
+      bottom: 80px;
+      left: 0px;
+    }
+}
+.fuel{
+          width: 50px;
+          position: absolute;
+          height: 100px;
+          bottom: 20px;
+          background-color: bisque;
+          right: 220px;
+       &-block{
+           height: inherit;
+           background-color: #ffc107;
+           width: inherit;
+               padding: 10px;
+               &__vline{
+                     height: 10px;
+                     background-color:#9e9e9e;
+
+               }
+       }
+}
+.container {
+      flex-direction: row;
+      color: #707070;
+      right: 0;
+      bottom: 0;
+      position: absolute;
+      display: flex;
+
+}

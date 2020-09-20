@@ -11,8 +11,15 @@
     <!--            <img alt="" class="wave" src="../../assets/auth/wave.png">-->
     <div class="container">
       <div class="container_inner">
-        <button @click="engineOn()">Завести</button>
-        <button @click="engineOff()">Заглушить</button>
+        <button @click="engineToggle"><span v-show="chooseBtn">Завести</span><span v-show="!chooseBtn">Заглушить</span></button>
+        <vue-speedometer
+          :maxSegmentLabels="12"
+          :segments="3"
+          :value="470"
+          :segmentColors='["tomato", "gold", "limegreen"]'
+          needleColor="lightgreen"
+        />
+<!--        <button @click="engineOff()">Заглушить</button>-->
       </div>
       <!--                <div class="img">-->
       <!--                    <img alt="" src="../../assets/auth/undraw_electric_car_b7hl.svg">-->

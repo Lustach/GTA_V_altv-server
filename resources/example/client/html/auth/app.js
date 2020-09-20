@@ -43,11 +43,9 @@ const app = new Vue({
 			return 'alt' in window
 		},
 		isUserNameValid() {
-			console.log(Boolean(this.user.userName), 'validUserName')
 			return this.user.userName
 		},
 		isUserEmailValid() {
-			console.log(Boolean(this.user.email.includes('@')), 'validUserEmail')
 			return this.isEmailLengthValid && this.isEmailValid
 		},
 		isEmailLengthValid() {
@@ -57,7 +55,6 @@ const app = new Vue({
 			return this.user.email.indexOf('@') !== -1
 		},
 		isUserPassValid() {
-			console.log(Boolean(this.user.password.length > 4), 'validUserPass')
 			return this.user.password.length > 4
 		},
 		validForm() {
@@ -70,7 +67,6 @@ const app = new Vue({
 	},
 	methods: {
 		keyAlt(){
-			console.log('keyup')
 		},
 		login() {
 			if (this.isAlt)
@@ -99,18 +95,6 @@ const app = new Vue({
 					input.parentNode.parentNode.classList.add('focus')
 			})
 		},
-		// async signUp(e) {
-		// 	console.log(this.user, 'SUKAAAA')
-		// 	e.preventDefault()
-		// 	try {
-		// 		const result = await this.$API.user.signUp(this.user.userName, this.user.email, this.user.password)
-		// 		this.setLcStore(result.data)
-		// 		this.getLcJwt()
-		//
-		// 	} catch (e) {
-		// 		console.log(e)
-		// 	}
-		// }
 	},
 
 })

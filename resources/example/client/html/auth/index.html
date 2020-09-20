@@ -61,8 +61,10 @@
             <!--            <a>Forgot Password?</a>-->
           </div>
           <!--          :disabled="validForm? '' : 'disabled'"-->
-          <input @click="login" class="btn" type="submit" v-show="isLogin" value="Login">
-          <input @click="login" class="btn" type="submit" v-show="!isLogin" value="Sign Up">
+          <input @click="login" :disabled="user.password.length<4 || user.email.length<3 || this.user.email.indexOf('@') === -1"
+                 class="btn" type="submit" v-show="isLogin" value="Login">
+          <input @click="login" :disabled="user.password.length<4 || user.email.length<3 || this.user.email.indexOf('@') === -1 || user.userName.length< 1"
+                 class="btn" type="submit" v-show="!isLogin" value="Sign Up">
           <!--          <component v-bind:is="component" class="test"></component>-->
         </div>
       </div>
